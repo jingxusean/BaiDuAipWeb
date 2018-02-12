@@ -1,0 +1,55 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.classpath
+.gitattributes
+.project
+.settings/.jsdtscope
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+.settings/org.eclipse.wst.jsdt.ui.superType.name
+build/classes/applicationContext.xml
+build/classes/config/hibernate/hibernate.properties
+build/classes/config/spring/applicationContext-memcached.xml
+build/classes/config/spring/applicationContext-persistence.xml
+build/classes/config/spring/applicationContext-sqlmap.xml
+build/classes/content/Language_en_US.properties
+build/classes/content/Language_zh_CN.properties
+build/classes/log4j.properties
+build/classes/rebel.xml
+build/classes/struts.xml
+build/classes/template/simple/text.ftl
+build/classes/template/xhtml/age.ftl
+build/classes/template/xhtml/checkbox.ftl
+build/classes/template/xhtml/control-close.ftl
+build/classes/template/xhtml/control.ftl
+build/classes/template/xhtml/controlfooter.ftl
+build/classes/template/xhtml/controlheader.ftl
+build/classes/template/xhtml/pager.ftl
+build/classes/template/xhtml/radio.ftl
+build/classes/template/xhtml/select.ftl
+WebContent/application/.DS_Store
+WebContent/application/modules/.DS_Store
+WebContent/application/modules/jsp/.DS_Store
+src/config/hibernate/hibernate.properties

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="jquery.gridster.css">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script src="jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+var gridster = $(".gridster ul").gridster().data('gridster');
+        $(function(){ //DOM Ready
+            $(".gridster ul").gridster({
+                widget_margins: [10, 10],
+                widget_base_dimensions: [140, 40],
+                serialize_params: function($w, wgd) { 
+                    return { 
+                           id: $($w).attr('id'), 
+                           col: wgd.col, 
+                           row: wgd.row, 
+                           size_x: wgd.size_x, 
+                           size_y: wgd.size_y 
+                    };
+                }
+            })
+            var gridster = $(".gridster ul").gridster().data('gridster');
+            gridData = gridster.serialize();
+            alert(JSON.stringify(gridData));
+        }); 
+</script>
+<div class="gridster">
+    <ul>
+        <li id="test1" data-row="1" data-col="1" data-sizex="1" data-sizey="1">hhhhhhhhhh1</li>
+        <li id="test2" data-row="2" data-col="1" data-sizex="1" data-sizey="1">hhhhhhhhhh2</li>
+        <li id="test3" data-row="3" data-col="1" data-sizex="1" data-sizey="1">hhhhhhhhhh3</li>
+        <li id="test4" data-row="1" data-col="2" data-sizex="1" data-sizey="1">hhhhhhhhhh4</li>
+        <li id="test5" data-row="2" data-col="2" data-sizex="1" data-sizey="1">hhhhhhhhhh5</li>
+        <li id="test6" data-row="3" data-col="2" data-sizex="1" data-sizey="1">hhhhhhhhhh6</li>
+        <li id="test7" data-row="1" data-col="3" data-sizex="1" data-sizey="1">hhhhhhhhhh7</li>
+        <li id="test8" data-row="2" data-col="3" data-sizex="1" data-sizey="1">hhhhhhhhhh8</li>
+        <li id="test9" data-row="3" data-col="3" data-sizex="1" data-sizey="1">hhhhhhhhhh9</li>
+        <li id="test10" data-row="1" data-col="4" data-sizex="1" data-sizey="1">hhhhhhhhhh10</li>
+        <li id="test11" data-row="2" data-col="4" data-sizex="1" data-sizey="1">hhhhhhhhhh11</li>
+        <li id="test12" data-row="3" data-col="4" data-sizex="1" data-sizey="1">hhhhhhhhhh12</li>
+    </ul>
+</div>

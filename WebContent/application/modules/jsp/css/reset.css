@@ -1,0 +1,13 @@
+@charset "utf-8";
+body{ margin:0; padding:0;}html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}img,body,html{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}table{border-collapse:collapse;}
+body{font-size:12px;}
+.clear { height:0; clear:both; font-size:0; line-height:0; overflow:hidden; visibility:hidden;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+zoom:1;}
+em,i { font-style:normal;}
+.pngfix {}
+
+a{text-decoration:none;} 
+/*a:hover{text-decoration:underline;font-family:Simsun;}
+*/
+.hide{ display:none}
